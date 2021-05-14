@@ -1,0 +1,10 @@
+title: Alert
+name: alert
+default: alert
+status: bootstrap
+context:
+  color: color-01
+  label: This is a basic alert in color-01
+  class:
+
+

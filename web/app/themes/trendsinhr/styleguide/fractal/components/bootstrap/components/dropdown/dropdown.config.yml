@@ -1,0 +1,7 @@
+title: Dropdown
+name: dropdown
+status: bootstrap
+context:
+  label: Try this dropdown
+  color: color-01
+

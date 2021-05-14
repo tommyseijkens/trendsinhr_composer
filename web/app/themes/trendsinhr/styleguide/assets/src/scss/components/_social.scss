@@ -1,0 +1,100 @@
+.page ul.social {
+  display: inline-block;
+  a {
+    margin-right: 5px;
+  }
+}
+.page .social-share {
+  @include media-breakpoint-down(sm) {
+    transform: scale(.9);
+    transform-origin: left top;
+  }
+}
+
+ul.social {
+
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 0 6px 0;
+
+    &::before {
+      display: none;
+    }
+
+    a {
+      text-decoration: none;
+      width: 40px;
+      height: 40px;
+      margin: 0 12px 0 0;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      overflow: hidden;
+      display: block;
+      border:0;
+      padding:0;
+
+      @include media-breakpoint-down(xs) {
+        height: 47px;
+        width: 47px;
+        line-height: 47px;
+      }
+
+      &:before {
+        font-family: $font-icon;
+        color: white;
+        font-size: 18px;
+        transition: all 0.2s ease-in;
+
+        line-height: 40px;
+        text-align: center;
+        display: block;
+        border-radius: 100%;
+        vertical-align: sub;
+      }
+
+      &:hover:before {
+        color: white;
+      }
+
+      &:active:before {
+        color: white;
+      }
+
+      &[href*="facebook"]:before {
+        content: "v";
+        font-size: 20px;
+      }
+
+      &[href*="twitter"]:before {
+        content: "w";
+      }
+
+      &[href*="linkedin"]:before {
+        content: "8";
+      }
+
+      &[href*="instagram"]:before {
+        content: "\e003";
+      }
+
+      &[href*="youtube"]:before {
+        content: "x";
+        font-size: 22px;
+      }
+
+      &[href*="tel:"]:before {
+        content: "m";
+        line-height: 37px;
+      }
+
+      &[href*="mailto"]:before {
+        content: "9";
+      }
+    }
+  }
+}

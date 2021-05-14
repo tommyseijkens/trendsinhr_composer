@@ -1,0 +1,98 @@
+
+nav.pagination {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding:0 0 60px 0;
+
+  .screen-reader-text {
+    display: none;
+  }
+
+  .nav-links {
+    a, .current {
+      color: $color-text;
+      font-size: 15px;
+      transition: all 0.2s ease-in;
+      background:#FFF;
+      margin:0 3px 0 3px;
+      width:45px;
+      font-weight: 500;
+      height:45px;
+      line-height: 45px;
+      text-align: center;
+      display: inline-block;
+      border-radius:25px;
+      text-decoration: none;
+      overflow: hidden;
+
+      &:hover {
+        background: $color-bg;
+        color: $color-text;
+      }
+
+      &:before {
+
+      }
+
+      &.prev,
+      &.next {
+        overflow: hidden;
+
+        &:before {
+          font-family: $font-icon;
+          text-indent: 0;
+          display: inline-block;
+          width: 45px;
+          font-size: 10px;
+        }
+      }
+
+      &.prev:before {
+        content:"b";
+        transform: rotate(-90deg);
+      }
+      &.next:before {
+        content:"b";
+        transform: rotate(90deg);
+      }
+
+      &:hover:before {
+        color: $color-text;
+        background: $color-bg;
+      }
+
+      &:active:before {
+        color:#FFF;
+        background:#000;
+      }
+
+
+      &[href*="facebook"]:before  { content:"n"; }
+      &[href*="twitter"]:before   { content:"u"; }
+      &[href*="linkedin"]:before  { content:"p"; }
+      &[href*="tel:"]:before       { content:"r"; line-height: 37px; }
+      &[href*="mailto:"]:before    { content:"l"; }
+    }
+
+    .current {
+      color: white;
+      background: $color-03;
+      box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+
+      &:hover {
+        cursor: default;
+        box-shadow: none;
+      }
+    }
+    .dots {
+      margin: 0 20px;
+      height: 45px;
+      line-height: 45px;
+      display: inline-block;
+      overflow: hidden;
+      font-weight: 500;
+      color: $color-text;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+title: Spinner
+name: spinner
+status: bootstrap
+context:
+  color: color-01
+  label: Loading...
+  type: border
+

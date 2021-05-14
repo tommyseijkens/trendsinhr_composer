@@ -1,0 +1,51 @@
+// Font initial
+$font-weight-thin: 100;
+$font-weight-extra-light: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-heavy: 900;
+$font-weight-bolder: 500;
+
+// Load or import fonts in styles.scss then set and assign them below
+$font-icon: 'driessen' !important;
+$font-heading: 'tiempos', serif;
+$font-text: 'Roboto', Arial, sans-serif;
+
+$font-family-base: $font-text;
+$headings-font-family: $font-heading;
+$font-weight-base: $font-weight-regular;
+$headings-font-weight: $font-weight-bold;
+$small-font-size: 0.85rem;
+
+$font-size-base:              1.125rem;
+$line-height-base:            1.675;
+
+$h1-font-size: 3.5rem;    //56px
+$h2-font-size: 1.75rem;   //28px
+$h3-font-size: 1.3125rem; //21px
+$h4-font-size: 1.3125rem;
+$h5-font-size: 1.3125rem;
+$h6-font-size: 1.3125rem;
+
+$lead-font-size: 1.1875rem;
+$lead-font-weight: 500;
+
+$blockquote-font-size: 2.25rem;
+
+$paragraph-margin-bottom: 3rem;
+$headings-margin-bottom: 1rem;
+$headings-line-height: 1;
+$enable-responsive-font-sizes: true;
+
+$display1-size:               3.5rem;     //56px
+$display2-size:               3rem;       //48px
+$display3-size:               2.25rem;    //36px
+$display4-size:               1.75rem;    //28px
+
+$display1-weight:             $font-weight-bold;
+$display2-weight:             $font-weight-bold;
+$display3-weight:             $font-weight-bold;
+$display4-weight:             $font-weight-bold;
+$display-line-height:         1;

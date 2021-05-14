@@ -1,0 +1,17 @@
+.av-embed-container--podcast {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+.av-embed-container--podcast iframe {
+  width: 100%;
+}
+
+.container-content p {
+  iframe {
+    width: 100%;
+  }
+}

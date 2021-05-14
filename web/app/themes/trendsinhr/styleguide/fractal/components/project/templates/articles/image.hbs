@@ -1,0 +1,11 @@
+<div class="article">
+    <div class="container mt-7 mt-lg-12">
+        {{> @description-extended type="Artikel" }}
+        {{> @intro title="Het wordt vandaag een mooie dag" }}
+        {{#> @article-media }}
+            {{> @content-article-image }}
+        {{/ @article-media }}
+        {{> @content-text }}
+        {{> @meta-author }}
+    </div>
+</div>

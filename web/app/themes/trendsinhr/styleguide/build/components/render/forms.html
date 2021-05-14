@@ -1,0 +1,159 @@
+
+
+<!--
+<form class="form-horizontal">
+
+  <div class="form-group">
+    <label for="inputexample">Input text</label>
+    <input type="text" class="form-control" name="inputexample" id="inputexample" placeholder="Input some text..." required>
+  </div>
+  <div class="custom-control custom-radio">
+    <input type="radio" id="radio1" name="radioexample" value="Radio Example" class="custom-control-input">
+    <label class="custom-control-label label-big__label" for="radio1">
+      Radiobutton with label
+      <div class="label-big__info">€32,50 p.p.</div>
+      <div class="label-big__description">The whole package</div>
+    </label>
+  </div>
+
+</form>
+-->
+
+<h1 class="overview">Bootstrap custom form</h1>
+
+<h2 class="overview">Reservation</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis dapibus massa at tristique. Ut ultrices dapibus
+  massa et bibendum.</p>
+<div class="icon-wave mb-5"></div>
+<form class="form mb-5">
+  <div class="form-row">
+    <div class="form-group col-lg-6">
+      <label for="location">Location</label>
+      <select class="custom-select" name="location" id="location" required>
+        <option selected>Select location...</option>
+        <option value="Location inside">Location inside</option>
+        <option value="Outside location">Outside location</option>
+      </select>
+    </div>
+    <div class="form-group col-lg-6">
+      <label for="numbers">Numbers</label>
+      <input type="number" name="numbers" class="form-control" id="numbers" placeholder="Numbers...">
+    </div>
+  </div>
+  <label>Select your preffered choice</label>
+  <fieldset class="form-group fieldset--border label-big">
+    <div class="custom-control custom-radio">
+      <input type="radio" id="radio1" name="preferred" value="Vergaderarrangement 1" class="custom-control-input">
+      <label class="custom-control-label label-big__label" for="radio1">
+        First choice
+        <div class="label-big__info">€12,50 p.p.</div>
+        <div class="label-big__description">Free drinks</div>
+      </label>
+    </div>
+    <div class="custom-control custom-radio">
+      <input type="radio" id="radio2" name="preferred" value="Vergaderarrangement 2" class="custom-control-input">
+      <label class="custom-control-label label-big__label" for="radio2">
+        Second choice
+        <div class="label-big__info">€20,50 p.p.</div>
+        <div class="label-big__description">Free drinks and lunch</div>
+      </label>
+    </div>
+    <div class="custom-control custom-radio">
+      <input type="radio" id="radio3" name="preferred" value="Vergaderarrangement 3" class="custom-control-input">
+      <label class="custom-control-label label-big__label" for="radio3">
+        Third choice
+        <div class="label-big__info">€22,50 p.p.</div>
+        <div class="label-big__description">Free drinks, lunch & beer</div>
+      </label>
+    </div>
+    <div class="custom-control custom-radio">
+      <input type="radio" id="radio4" name="preferred" value="Geen preferred" class="custom-control-input">
+      <label class="custom-control-label label-big__label" for="radio4">
+        None of the above
+      </label>
+    </div>
+  </fieldset>
+  <label>Options</label>
+  <fieldset class="form-group fieldset--border label-big">
+    <div class="custom-control custom-checkbox">
+      <input type="checkbox" id="check1" name="extra option 1" value="Ontbijtbuffet" class="custom-control-input">
+      <label class="custom-control-label label-big__label" for="check1">
+        Option one
+        <div class="label-big__info">€17,50 p.p.</div>
+      </label>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <input type="checkbox" id="check2" name="extra option 2" value="Lunchbuffet" class="custom-control-input">
+      <label class="custom-control-label label-big__label" for="check2">
+        Some other option
+        <div class="label-big__info">€12,50 p.p.</div>
+      </label>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <input type="checkbox" id="check-3" name="extra option 3" value="Borrel" class="custom-control-input">
+      <label class="custom-control-label label-big__label" for="check-3">
+        Give me both options
+        <div class="label-big__info">€12,50 p.p.</div>
+        <div class="label-big__description">Free beverages and 3 months Netflix subscription</div>
+      </label>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <input type="checkbox" id="check-4" name="extra option 4" value="Diner" class="custom-control-input">
+      <label class="custom-control-label label-big__label" for="check-4">
+        Luxury all over
+        <div class="label-big__info">€32,50 p.p.</div>
+        <div class="label-big__description">The whole package</div>
+      </label>
+    </div>
+  </fieldset>
+  <div class="form-row">
+    <div class="form-group col-lg-6">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" name="name" id="name" placeholder="Name..." required>
+    </div>
+    <div class="form-group col-lg-6">
+      <label for="company">Company</label>
+      <input type="text" class="form-control" name="company" id="company" placeholder="Company name..." required>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-lg-6">
+      <label for="email">E-mail</label>
+      <input type="email" class="form-control" value="" id="email" name="email" placeholder="E-mail..." required>
+    </div>
+    <div class="form-group col-lg-6">
+      <label for="phone">Phone</label>
+      <input type="text" class="form-control" id="phone" value="" name="phone" placeholder="Phonenumber..." required>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-lg-6">
+      <div id="cvUpload">
+        <input id="uploadbutton" type="file" data-val="true" data-val-required="Select a file..."
+               class="uploadbutton valid" name="upload" title="Upload a document..." aria-required="true"
+               aria-invalid="false" aria-describedby="uploadbutton-error">
+        <label for="uploadbutton"
+               class="shadow px-3 py-2 rounded text-white bg-color-01">Upload</label><span>&nbsp;</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea class="form-control" id="message" name="message" rows="8" placeholder="Textarea..."></textarea>
+  </div>
+  <input type="text" value="" name="last_name" class="d-none">
+  <button type="submit" class="btn btn-sm btn-color-04">Send</button>
+</form>
+<div class="form-messages">
+  <div class="alert alert-color-accept form-success">
+    The form has been sent succesfully.
+  </div>
+  <div class="alert alert-color-deny form-error">
+    Something went wrong, please try again.
+  </div>
+</div>
+
+

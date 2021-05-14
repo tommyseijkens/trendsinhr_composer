@@ -1,0 +1,53 @@
+
+.labels {
+  display: flex;
+  flex-direction: row;
+  .label {
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 0;
+    &:not(:last-of-type) {
+      &:after {
+        content: '/';
+        margin: 0 .5rem;
+      }
+    }
+  }
+}
+
+.label__day, .label__month, .label__year {
+  display: inline-block;
+}
+
+.label__month {
+  @include media-breakpoint-down(md) {
+    width: 3ch;
+  }
+}
+
+.page-header {
+  .labels {
+    margin-bottom: 1rem;
+  }
+  .label {
+    color: white;
+  }
+}
+
+.label__reading-time {
+  display: inline-block;
+  &:before {
+    @include media-breakpoint-up(sm) {
+      content: "Leestijd ";
+    }
+    @include media-breakpoint-only(xs) {
+      font-family: $font-icon;
+      text-transform: lowercase;
+      content: "f";
+      display: inline-block;
+      margin-right: .5rem;
+      position: relative;
+      top: 2px;
+    }
+  }
+}

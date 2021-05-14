@@ -1,0 +1,11 @@
+// buttons
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    @include button-variant($value, $value, $hover-background: darken($value, $drigro-color-shades), $hover-border: darken($value, $drigro-color-shades), $active-background: darken($value, $drigro-color-shades), $active-border: darken($value, $drigro-color-shades));
+    &:active,
+    &.focus,
+    &:focus {
+      box-shadow: unset !important;
+    }
+  }
+}

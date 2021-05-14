@@ -1,0 +1,75 @@
+.btn {
+
+  box-shadow: none;
+  background: $color-01;
+  text-transform: uppercase;
+  color: white;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: white;
+    background: $color-01-dark;
+  }
+
+  &.inactive {
+    opacity: unset;
+    box-shadow: unset;
+    background-color: $light;
+
+    &:hover {
+      color: white;
+      //box-shadow: $box-shadow;
+    }
+  }
+
+  &:focus:not(:hover) {
+    //box-shadow: $box-shadow;
+  }
+
+}
+
+.btn-link {
+  //box-shadow: unset !important;
+}
+
+
+.btn-group,
+.btn-group-vertical {
+  .btn {
+    //box-shadow: unset !important;
+  }
+}
+
+button {
+  @extend .btn;
+}
+
+button:focus {
+  outline: 0;
+}
+
+
+.btn-color-01 {
+  &:hover {
+    color: white;
+    background: $color-01-dark;
+  }
+}
+
+.btn-color-03 {
+  @extend .theme-bg;
+  &:hover {
+    @extend .theme-bg-dark;
+  }
+}
+
+
+.btn-color-04 {
+  color: black;
+  background: $color-04;
+  &:hover {
+    color: black;
+    background: $color-04-dark;
+  }
+}

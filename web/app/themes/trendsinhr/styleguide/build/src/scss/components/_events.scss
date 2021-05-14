@@ -1,0 +1,148 @@
+table.list,
+table.list tr td,
+table.list tr th {
+  padding: 7px 0;
+  margin: 0;
+  background: none;
+  color: inherit;
+  text-align: left;
+  border-radius: 5px !important;
+}
+
+table.list tr td {
+  //border-top: 1px solid $color-borders;
+}
+
+table.list tr:first-child td {
+  border: 0;
+}
+
+table.list tr th:last-child,
+table.list tr td:last-child {
+  text-align: right;
+}
+
+table.list tr td:first-child {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+table.list {
+  padding: 0;
+}
+
+
+.program-item-description {
+  margin-top: 10px;
+}
+
+.program-item-description * {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  line-height: 25px !important;
+}
+
+.program-item-info {
+  justify-content: space-between;
+  font-size: 17px;
+}
+
+.program-item {
+  margin: 0;
+  padding: 30px 0 27px;
+  border-top: 1px solid $color-borders;
+}
+
+.program-item:first-child {
+  border: 0;
+}
+
+.program-item-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 4px 0;
+}
+
+.program h2 {
+  margin-bottom: 15px;
+}
+
+.program-list {
+  font-weight: 400;
+  position: relative;
+  background: $color-bg-light;
+  border: 1px solid $color-bg-light;
+}
+
+.program-list tbody tr td {
+  border-radius: 0 !important;
+  border: 0 !important;
+}
+
+.program-list__item {
+  padding: 15px 10px;
+}
+
+.program-list__item {
+
+}
+
+.program-list__item:nth-child(2) {
+
+}
+
+.program-list__item:nth-child(5) {
+  display: table-cell;
+  position: relative;
+}
+
+.program-list__item:first-child {
+  //display: table-cell;
+}
+
+.program-list__item:first-child {
+  padding-left: 20px;
+
+}
+
+.program-list__item:nth-child(4) {
+  padding-right: 20px;
+  text-align: left !important;
+  width: 100%;
+
+}
+
+.program-list__item a:hover {
+  color: $text-color;
+}
+
+.program-list__item svg {
+  margin-right: 4px;
+}
+
+.program-item__full {
+  height: 24px;
+  line-height: 24px;
+  color: white;
+  background: $color-01;
+  position: absolute;
+  right: -10px;
+  top: 15px;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 0 8px;
+  font-weight: 500;
+  width: 42px;
+}
+
+.program-item__full:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 0;
+  border-color: $color-borders transparent transparent transparent;
+}

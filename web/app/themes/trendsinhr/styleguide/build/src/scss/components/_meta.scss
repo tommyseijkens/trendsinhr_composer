@@ -1,0 +1,17 @@
+.meta-author__image {
+  width: 150px;
+  @include media-breakpoint-down(xs) {
+    width: 100px;
+  }
+}
+
+.meta-author__name {
+  @extend .h4;
+  @extend .display-4;
+  margin-bottom: .5rem;
+}
+
+.meta-author__jobtitle {
+  font-size: 1rem;
+  text-transform: uppercase;
+}

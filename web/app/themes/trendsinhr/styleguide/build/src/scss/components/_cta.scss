@@ -1,0 +1,39 @@
+.cta,
+.calltoaction,
+.block--links {
+  display: inline-block;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid $color-bg;
+  border-radius: $border-radius;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    font-family: $font-heading;
+  }
+}
+
+.block--links {
+  width: 100%;
+  padding: 2rem;
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.3125rem;
+  }
+  ul, ol {
+    margin-bottom: 0 !important;
+  }
+  a {
+    border-bottom: 1px solid $color-text;
+  }
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+  ul li p {
+    padding: 0;
+    margin-bottom: 0;
+  }
+}
+
+
+

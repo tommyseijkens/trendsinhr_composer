@@ -1,0 +1,24 @@
+.fractal-preview h1.overview {
+  color: #ff0000;
+  border-bottom: 1px solid #4d4d4d;
+  padding-bottom: 10px;
+  margin-top: 100px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: $ color-01;
+}
+
+.fractal-preview h1.overview:first-of-type {
+  margin-top: 0;
+}
+
+.fractal-preview h2.overview {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #cf0000;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+}
+
+
+

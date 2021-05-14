@@ -1,0 +1,87 @@
+<h1 class="overview">Buttons</h1>
+
+<h2 class="overview">Standard Bootstrap buttons</h2>
+{{> @button color="primary" label="Primary" }}
+{{> @button color="secondary" label="Secondary" }}
+{{> @button color="success" label="Success" }}
+{{> @button color="danger" label="Danger" }}
+{{> @button color="warning" label="Warning" }}
+{{> @button color="info" label="Info" }}
+{{> @button color="light" label="Light" }}
+{{> @button color="dark" label="Dark" }}
+{{> @button color="link" label="Link" }}
+
+<h2 class="overview">Outlined</h2>
+{{> @button color="outline-primary" label="Primary" }}
+{{> @button color="outline-secondary" label="Secondary" }}
+{{> @button color="outline-success" label="Success" }}
+{{> @button color="outline-danger" label="Danger" }}
+{{> @button color="outline-warning" label="Warning" }}
+{{> @button color="outline-info" label="Info" }}
+{{> @button color="outline-light" label="Light" }}
+{{> @button color="outline-dark" label="Dark" }}
+
+<h2 class="overview">Large size</h2>
+{{> @button color="primary btn-lg" label="Primary large" }}
+{{> @button color="secondary btn-lg" label="Secondary large" }}
+
+
+<h2 class="overview">Small size</h2>
+{{> @button color="primary btn-sm" label="Primary small" }}
+{{> @button color="secondary btn-sm" label="Secondary small" }}
+
+
+<h2 class="overview">Custom colors</h2>
+{{> @button color="color-01" label="color-01" }}
+{{> @button color="color-02" label="color-02" }}
+{{> @button color="color-03" label="color-03" }}
+{{> @button color="color-04" label="color-04" }}
+
+{{> @button color="outline-color-01" label="color-01" }}
+{{> @button color="outline-color-02" label="color-02" }}
+{{> @button color="outline-color-03" label="color-03" }}
+{{> @button color="outline-color-04" label="color-04" }}
+
+
+<h2 class="overview">Button tags (a, button, input)</h2>
+<a class="btn btn-primary" href="#" role="button">a:Link</a>
+<button class="btn btn-color-04" type="submit">button:Button</button>
+<input class="btn btn-color-03" type="button" value="input:Input">
+<input class="btn btn-color-02" type="submit" value="input:Submit">
+<input class="btn btn-color-01" type="reset" value="input:Reset">
+
+
+<h2 class="overview">Blocklevel buttons (add .btn-block)</h2>
+<div class="w-50">
+  {{> @button color="color-01 btn-block" label="color-01 .btn-block" }}
+  {{> @button color="color-02 btn-block" label="color-02 .btn-block" }}
+</div>
+
+<h2 class="overview">Disabled (add attribute disabled</h2>
+{{> @button color="color-01 disabled" label="color-01 disabled" }}
+{{> @button color="color-02 disabled" label="color-02 disabled" }}
+{{> @button color="color-03 disabled" label="color-03 disabled" }}
+{{> @button color="color-04 disabled" label="color-04 disabled" }}
+
+
+<h2 class="overview">Checkbox buttons</h2>
+<div class="btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-color-01">
+    <input type="checkbox" checked autocomplete="off"> Checked
+  </label>
+</div>
+
+<h2 class="overview">Group of buttons as radio</h2>
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+  </label>
+</div>
+
+

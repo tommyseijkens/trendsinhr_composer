@@ -1,0 +1,149 @@
+.footer-cta  {
+  text-align: center;
+}
+
+.footer-cta__title {
+  @extend h1;
+  font-size: 3rem;
+  line-height: 140%;
+  @include media-breakpoint-down(sm) {
+    font-size: 2.25rem;
+  }
+}
+
+.allow_contact_by_email {
+  display: none;
+}
+
+.footer-cta form {
+  position: relative;
+}
+
+.footer-cta form {
+  :focus {
+    outline: 0;
+  }
+}
+
+.footer-cta form p#result {
+  display: none;
+}
+
+.footer-cta form input[type=email] {
+  border: 1px solid $color-bg;
+  @include media-breakpoint-up(md) {
+    padding: 25px 150px 25px 35px;
+    border-radius: 50px;
+    width: 100%;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 10px 24px;
+    border-radius: 30px;
+    width: 100%;
+  }
+}
+
+.footer-cta form input[type=submit] {
+  @extend .btn;
+  @extend .btn-lg;
+  @include media-breakpoint-up(md) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+  @include media-breakpoint-down(sm) {
+    margin-top: 1rem;
+    display: block;
+    width: 100%;
+  }
+
+}
+
+.footer-nav {
+  .footer-nav__title {
+    @extend h4;
+  }
+  a {
+    display: block;
+  }
+}
+
+
+.footer-nav__social,
+.social-share {
+  @extend ul.social;
+  ul {
+    margin: 0;
+    .nav-link,
+    .social-link {
+      display: flex;
+      justify-content: center;
+      width: 46px;
+      height:46px;
+      background: $color-01;
+      color: white;
+      border-radius: 46px;
+      transition: all 100ms ease-in-out;
+      box-shadow: 0 0 0 0 transparent;
+      &:hover,
+      &:active,
+      &:focus {
+        //box-shadow: 0 0 0 3px $color-01;
+        background: $color-01-dark;
+        &::before {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.footer-branding {
+  display: inline-block;
+  padding: 0 1.75rem;
+  //width: 100%;
+  width: 216px;
+  height: 80px;
+  background-image: $logo-drigro;
+  background-size: 160px 53px;
+  background-position: 28px 0;
+  background-repeat: no-repeat;
+}
+
+.footer-nav {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.footer-legal {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    li:not(:last-of-type) {
+      margin-right: 1rem;
+    }
+  }
+  a {
+    color: white;
+  }
+}
+
+.footer-legal__privacy {
+  @include media-breakpoint-down(md) {
+    a {
+      margin: 0 1rem;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    a:not(:last-of-type) {
+      margin-right: 1rem;
+    }
+  }
+}

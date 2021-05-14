@@ -1,0 +1,236 @@
+.grid-section {
+  position: relative;
+}
+
+.grid-section--events {
+  @include media-breakpoint-up(md) {
+    border-top: 1px solid $color-bg;
+  }
+}
+
+.grid-section--archives {
+  background: $color-bg;
+}
+
+.wave-bg {
+  &:after {
+    position: absolute;
+    width: 100%;
+    content: "";
+    background-image: $whitewave;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+    bottom: -5px;
+    transform: scaleX(-1);
+  }
+  @include media-breakpoint-up(md) {
+    background: $themeColor-main;
+    background: var(--themecolor);
+    padding-bottom: 250px;
+    &:after {
+      height: 768px;
+      background-size: 3200px 768px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    background: $themeColor-main;
+    padding-bottom: 200px;
+    &:after {
+      height: 384px;
+      background-size: 1600px 384px;
+    }
+  }
+}
+
+.page--home .grid-section--archives {
+  padding-bottom: 0;
+  &:after {
+    display: none;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .page--archives .grid-section--archives {
+    padding-top: 3rem;
+    padding-bottom: 360px;
+  }
+}
+
+.grid-section--whitepapers,
+.grid-section--columns,
+.grid-section--archives,
+.grid-section--recommended {
+  @include media-breakpoint-up(md) {
+    background: $color-bg;
+  }
+  @include media-breakpoint-down(sm) {
+    background: $color-bg;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .page--topics {
+    .grid-section--topics {
+      background: $color-bg;
+      padding-bottom: 250px;
+
+      .grid-section-label {
+        color: $color-text;
+      }
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  .page--topics {
+    .grid-section--topics {
+      display: none;
+    }
+  }
+}
+
+.grid-section-label {
+  @include media-breakpoint-up(md) {
+    position: sticky;
+    float: left;
+    top: 27px;
+    width: 0;
+    white-space: nowrap;
+    z-index: 20;
+    transform: rotate(90deg);
+    transform-origin: bottom left;
+    margin: -40px 0 270px 0;
+    padding: .5rem 0 .5rem 2rem;
+    border-left: 1px solid $color-04-dark;
+  }
+  @extend h2;
+  @include media-breakpoint-down(sm) {
+    font-size: 1.3125rem;
+  }
+}
+
+.grid-section--events .grid-section-label {
+  @include media-breakpoint-up(md) {
+    position: absolute;
+    margin-top: -35px;
+    z-index: 40;
+    border-left: 0;
+  }
+}
+
+.grid-section--topics {
+  .grid-section-label {
+    color: white;
+  }
+}
+
+.page--whitepapers .grid-section--whitepapers,
+.page--archive .grid-section--archives,
+.page--topic.grid-section--topics,
+.page--article .grid-section--recommended {
+  background: $color-bg;
+  .grid-section-label {
+    color: $color-text;
+  }
+  .card-overview .card-item:nth-child(n+4) {
+    display: none;
+  }
+  @include media-breakpoint-only(lg) {
+    .cards-overview .card-item:nth-child(n+4) {
+      display: none;
+    }
+  }
+}
+
+.more-link__wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.more-link {
+  //margin: 3rem 0;
+  text-transform: uppercase;
+  color: $color-text;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  &:hover {
+    border-bottom: 1px solid $color-text;
+  }
+}
+
+
+@include media-breakpoint-down(sm) {
+  .cards-row__navigator {
+    display:none;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .grid-section--events {
+    position: relative;
+    .cards-row__navigator {
+      z-index: 50;
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      width: 100%;
+      height: 120px;
+    }
+    &:hover {
+      .cards-row__navigator {
+        pointer-events: none;
+        .cards-row__navigator-left {
+          display: none;
+          &.active {
+            display: flex;
+          }
+          &::before {
+            pointer-events: all;
+            z-index: 2;
+            position: absolute;
+            top: 90px;
+            left: 40px;
+            font-family: $font-icon;
+            font-size: 1rem;
+            text-align: center;
+            transform: rotate(-90deg);
+            content: 'b';
+          }
+          &:hover {
+            &::before {
+              cursor: pointer;
+            }
+          }
+        }
+        .cards-row__navigator-right {
+          display: none;
+          &.active {
+            display: flex;
+          }
+          &::before {
+            pointer-events: all;
+            z-index: 2;
+            position: absolute;
+            top: 90px;
+            right: 15px;
+            font-family: $font-icon;
+            font-size: 1rem;
+            text-align: center;
+            transform: rotate(90deg);
+            content: 'b';
+          }
+          &:hover {
+            &::before {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

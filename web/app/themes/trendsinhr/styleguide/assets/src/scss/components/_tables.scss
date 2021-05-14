@@ -1,0 +1,116 @@
+table.default,
+table.default tr td,
+table.default tr th {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: none;
+  color: inherit;
+  text-align: left;
+  border-radius: 0 !important;;
+}
+
+table.statistics,
+table.statistics tr td,
+table.statistics tr th {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: none;
+  color: inherit;
+  text-align: left;
+  border-radius: 0 !important;
+}
+
+body table.statistics {
+  margin: 50px 0;
+}
+
+body table.statistics td,
+body table.statistics td p {
+  font-weight: 500;
+  font-size: 20px;
+  color: $color-text;
+  line-height: 1.2;
+  margin: 0;
+}
+
+body table.statistics td strong {
+  font-weight: 300;
+  font-size: 72px;
+  color: $color-text;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 15px;
+  text-indent: -6px;
+}
+
+body table.statistics tr td:first-child {
+}
+
+@include mobile {
+  table.statistics tr td,
+  table.statistics tr th {
+    display: table;
+    width: 100% !important;
+  }
+  body table.statistics td strong {
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  body table.statistics td p {
+    float: left;
+    display: inline-block;
+    line-height: 1
+  }
+}
+
+#tinymce tr td,
+#tinymce tr th {
+  border: 1px dashed $color-borders;
+}
+
+h2 + table.program {
+  margin-top: 15px;
+}
+
+table.program thead {
+  display: none;
+}
+
+table.program tr td,
+table.program tr th {
+  padding: 4px 12px;
+}
+
+table.program tr td {
+  background: #FFF;
+}
+
+table.program td:first-child {
+  font-weight: 500;
+  font-size: 18px;
+  color: $themeColor-main;
+  width: 120px;
+  padding-left: 0;
+}
+
+table.program td strong {
+  font-weight: 500;
+  font-size: 18px;
+  color: $text-color;
+  display: block;
+}
+
+@include mobile {
+  table.program tr td,
+  table.program tr th {
+    display: block;
+    padding: 0;
+    clear: both;
+  }
+  table.program td:first-child {
+    padding: 20px 0 0 0;
+  }
+}

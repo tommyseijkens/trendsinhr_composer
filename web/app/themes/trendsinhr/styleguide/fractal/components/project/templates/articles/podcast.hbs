@@ -1,0 +1,11 @@
+<div class="article">
+    <div class="container mt-7 mt-lg-12">
+        {{> @description-extended type="Podcast" }}
+        {{> @intro title="Beluister deze podcast" }}
+        {{#> @article-media }}
+            {{> @content-article-podcast }}
+        {{/ @article-media }}
+        {{> @content-text }}
+        {{> @meta-author }}
+    </div>
+</div>

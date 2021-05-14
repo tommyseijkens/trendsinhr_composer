@@ -1,0 +1,9 @@
+title: Tooltip
+name: tooltip
+status: bootstrap
+context:
+  color: color-01
+  label: This button is for something special...
+  text: Click me!
+  placement: right
+

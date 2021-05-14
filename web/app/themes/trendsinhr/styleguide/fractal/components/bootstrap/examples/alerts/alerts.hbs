@@ -1,0 +1,29 @@
+<h1 class="overview">Alert</h1>
+
+<h2 class="overview">Standard Bootstrap alerts</h2>
+{{> @alert color="color-01" label="This is an alert in color-01" }}
+{{> @alert color="color-02" label="This is an alert in color-02" }}
+{{> @alert color="color-03" label="This is an alert in color-03" }}
+{{> @alert color="color-04" label="This is an alert in color-04" }}
+
+<h2 class="overview">Standard Bootstrap alerts with inline links</h2>
+<div class="alert alert-color-01" role="alert">
+  This is an alert in themecolor color-01. Maybe you <a href="#" class="alert-link">can link</a> to somewhere else too!
+</div>
+
+
+<h2 class="overview">Additional content</h2>
+<div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">Well done!</h4>
+  <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+  <hr>
+  <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+</div>
+
+<h2 class="overview">Dismissing</h2>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>

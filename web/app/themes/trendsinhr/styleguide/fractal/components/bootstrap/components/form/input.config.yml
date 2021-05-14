@@ -1,0 +1,8 @@
+title: "Input"
+name: "input"
+status: "bootstrap"
+context:
+  label: Labeltext
+  placeholdertext: Input placeholder text
+  helptext: This text should give you hints.
+

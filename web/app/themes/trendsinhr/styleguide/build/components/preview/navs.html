@@ -1,0 +1,184 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <style>
+        :root {
+            --themecolor: #9bbca0;
+            --themecolor-rgb: 155,188,160;
+            --themecolor-dark: #7c9680;
+            --themecolor-dark-rgb: 124,150,128;
+
+            /* oker */
+            --themecolor-01: #ffbf38;
+            --themecolor-01-rgb:  255,191,56;
+            /* olive */
+            --themecolor-02: #9bbca0;
+            --themecolor-02-rgb: 155,188,160;
+            /* aquamarine */
+            --themecolor-03: #a489b0;
+            --themecolor-03-rgb: 164, 137,176;
+            /* orange */
+            --themecolor-04: #ffa500;
+            --themecolor-04-rgb: 255,165,0;
+        }
+    </style>
+
+    <link rel="stylesheet" href="../../dist/css/style.min.css">
+    <link rel="stylesheet" href="../../fractal/fractal_preview.css">
+    <title>Preview</title>
+
+</head>
+<body>
+
+<div class="fractal-preview">
+<h1 class="overview">Navs</h1>
+
+<h2 class="overview">Simple nav</h2>
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  </li>
+</ul>
+
+<h2 class="overview">Tabs nav</h2>
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  </li>
+</ul>
+
+<h2 class="overview">Pills nav</h2>
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  </li>
+</ul>
+
+<h2 class="overview">Fill space and justify</h2>
+<ul class="nav nav-pills nav-fill">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Much longer nav link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  </li>
+</ul>
+
+<h2 class="overview">Tabs navigation with dropdown</h2>
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+       aria-expanded="false">Dropdown</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  </li>
+</ul>
+
+<h2 class="overview">Tabs navigation with tab-panes</h2>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+       aria-selected="true">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+       aria-selected="false">Profile</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+       aria-selected="false">Contact</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend urna risus, a ultrices tortor facilisis eu.
+    Aenean suscipit mauris sed orci sollicitudin consectetur. Phasellus aliquam facilisis quam, blandit vulputate tortor
+    accumsan vel. Etiam sollicitudin ipsum egestas aliquam mattis. Vivamus quam neque, efficitur ac scelerisque eu,
+    tincidunt vel est. Phasellus hendrerit, felis vitae mattis imperdiet, neque velit hendrerit dolor, eu egestas massa
+    justo et nibh. Curabitur vel dictum orci. Aliquam dapibus mi vel egestas rhoncus. Vivamus consectetur, erat a
+    sodales tristique, lectus quam tristique lacus, consequat rutrum diam neque nec enim. Aliquam erat volutpat. Nullam
+    tincidunt nibh vel efficitur varius. Integer id risus orci. Vestibulum viverra, purus eget finibus pulvinar, velit
+    nisi facilisis nulla, eget gravida sem elit vel ligula. Nam sit amet urna nec nisl consequat vulputate. Donec at leo
+    gravida quam fermentum placerat. Ut porta tortor a justo fermentum ullamcorper.
+  </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus tristique
+    magna nec urna luctus, a aliquam dolor tristique. Vivamus cursus pellentesque dui vel tincidunt. Nullam quis rhoncus
+    sem, in lacinia eros. Etiam facilisis dignissim pretium. Aenean vel ex scelerisque, hendrerit ex id, tempor turpis.
+    Sed elementum tempor eleifend. Ut ut rhoncus orci. Sed eget massa tellus.
+  </div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Aliquam eget rutrum massa.
+    Maecenas at feugiat justo. Fusce eu vestibulum metus. Suspendisse rhoncus mollis dolor. Phasellus cursus sed nisl a
+    vulputate. Suspendisse consequat, risus at vestibulum consequat, augue nibh porttitor tortor, a elementum metus
+    sapien in ligula. Integer tempor enim et lacus accumsan auctor. Quisque mollis placerat imperdiet. Suspendisse id
+    ullamcorper ex, et imperdiet nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc accumsan
+    lobortis nisl vitae lacinia. Sed sodales tellus enim, eget ullamcorper mi ultrices eget. Mauris iaculis aliquet
+    ipsum eu tempor.
+  </div>
+</div>
+
+
+</div>
+
+<script src="../../dist/js/vendors.min.js"></script>
+<script src="../../dist/js/scripts.min.js"></script>
+<script src="../../fractal/fractal_preview.js"></script>
+<!--<script src="../../dist/js/css-polyfills.min.js"></script>-->
+
+
+</body>
+</html>
+

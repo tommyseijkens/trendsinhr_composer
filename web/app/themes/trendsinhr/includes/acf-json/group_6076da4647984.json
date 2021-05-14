@@ -1,0 +1,47 @@
+{
+    "key": "group_6076da4647984",
+    "title": "Audio Video Instellingen",
+    "fields": [
+        {
+            "key": "field_6076da541845c",
+            "label": "Media URL",
+            "name": "media_url",
+            "type": "oembed",
+            "instructions": "Plak hier de URL van het item dat je wilt delen.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "width": "",
+            "height": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "posttypes:video"
+            }
+        ],
+        [
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "posttypes:podcast"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1618421267
+}

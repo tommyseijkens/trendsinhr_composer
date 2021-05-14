@@ -1,0 +1,148 @@
+body#tinymce {
+
+  .text-color-theme {
+    color: $themeColor-main;
+  }
+
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $font-heading;
+  }
+
+  .list,
+  ul.list__bullets,
+  ul.list__checklist, .rond,
+  ul.list__links, .list.link,
+  ul.list__numbered,
+  ul,
+  ol {
+    position: relative;
+    list-style: none;
+    list-style-position: outside;
+    padding: 0;
+    margin-left: 2rem;
+
+    li {
+      position: relative;
+    }
+  }
+
+  .list__bullets, ul {
+    margin: 0 0 2rem 0;
+    padding-left: 2rem;
+
+    li {
+      position: relative;
+    }
+
+    li::before {
+      margin-right: 1rem;
+      content: '\2022';
+      display: inline-block;
+      //font-family: arial, sans-serif;
+      width: 23px;
+      height: 13px;
+      font-size: 2rem;
+      position: absolute;
+      top: -12px;
+      left: -2rem;
+      //@extend .theme-color;
+    }
+  }
+
+  .list__checklist, .rond {
+    margin: 0 0 2rem 0;
+    padding-left: 2rem;
+
+    li::before {
+      content: "e";
+      display: inline-block;
+      width: 23px;
+      height: 13px;
+      font-family: $font-icon;
+      font-size: 13px;
+      color: $themeColor-main;
+      position: absolute;
+      left: -2rem;
+      top: 3px;
+    }
+  }
+
+  .list__links, .list.link {
+    margin: 0 0 2rem 0;
+    padding-left: 2rem;
+
+    li::before {
+      content: "c";
+      display: inline-block;
+      width: 23px;
+      height: 13px;
+      font-family: $font-icon;
+      font-size: 13px;
+      color: $themeColor-main;
+      position: absolute;
+      left: -2rem;
+      top: 3px;
+    }
+  }
+
+  .list__numbered, ol {
+    margin: 0 0 2rem 0.25rem;
+    padding-left: 2rem;
+    counter-reset: list-counter;
+
+    li {
+      counter-increment: list-counter;
+      position: relative;
+
+      &:before {
+        font-weight: $font-weight-medium;
+        content: counter(list-counter) ". \00a0\00a0";
+        position: absolute;
+        top: 0;
+        left: -2rem;
+      }
+    }
+  }
+
+
+  font-family: $font-text;
+
+  .btn {
+    display: inline-block;
+    margin: .5rem 0;
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 20px;
+    color: white;
+    background: $color-text;
+    text-transform: uppercase;
+    font-weight: $font-weight-medium;
+  }
+
+  .btn-color-03 {
+    background: $themeColor-main;
+  }
+
+  .btn-color-04 {
+    color: black;
+    background: $color-bg;
+  }
+
+  blockquote,
+  blockquote p {
+    font-size: 1.5rem;
+    font-family: $font-heading;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 140%;
+  }
+
+  blockquote {
+    padding: .5rem 0 .5rem 2.25rem;
+    border-left: 1px solid $color-bg;
+    margin-bottom: 3rem;
+  }
+
+
+} /* body tinymce */

@@ -1,0 +1,98 @@
+.theme-bg {
+  background-color: $themeColor-main !important;
+  background-color: var(--themecolor) !important;
+}
+
+.theme-bg-dark {
+  background-color: $themeColor-main-dark !important;
+  background-color: var(--themecolor-dark) !important;
+}
+
+.theme-color {
+  color: $themeColor-main !important;
+  color: var(--themecolor) !important;
+}
+
+.theme-color-dark {
+  color: $themeColor-main-dark !important;
+  color: var(--themecolor-dark) !important;
+}
+
+/* yellow */
+.theme-color-01 {
+  color: $themeColor-01;
+  color: var(--themecolor-01) !important;
+}
+.theme-bg-01 {
+  background-color: $themeColor-01;
+  background-color: var(--themecolor-01) !important;
+}
+
+/* green */
+.theme-color-02 {
+  color: $themeColor-02;
+  color: var(--themecolor-02) !important;
+}
+.theme-bg-02 {
+  background-color: $themeColor-02;
+  background-color: var(--themecolor-02) !important;
+}
+
+
+/* red */
+.theme-color-03 {
+  color: $themeColor-03;
+  color: var(--themecolor-03) !important;
+}
+.theme-bg-03 {
+  background-color: $themeColor-03;
+  background-color: var(--themecolor-03) !important;
+}
+
+/* purple */
+.theme-color-04 {
+  color: $themeColor-04;
+  color: var(--themecolor-04) !important;
+}
+.theme-bg-04 {
+  background-color: $themeColor-04;
+  background-color: var(--themecolor-04) !important;
+}
+
+/* blue */
+.theme-color-05 {
+  color: $themeColor-05;
+  color: var(--themecolor-05) !important;
+}
+.theme-bg-05 {
+  background-color: $themeColor-05;
+  background-color: var(--themecolor-05) !important;
+}
+
+
+html, body {
+  min-width: 320px;
+
+  @media all and (-ms-high-contrast: none) {
+    overflow-x: hidden;
+  }
+
+}
+
+$tablet-width: 768px;
+$desktop-width: 990px;
+
+.text-color-theme,
+.goud {
+  color: $themeColor-main;
+  color: var(--theme-color);
+}
+
+a,
+input {
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0 !important;
+  }
+}

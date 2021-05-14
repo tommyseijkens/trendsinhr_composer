@@ -1,0 +1,9 @@
+title: Badge
+name: badge
+default: badge
+status: bootstrap
+context:
+  color: color-01
+  class:
+  label: Basic primary badge
+

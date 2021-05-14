@@ -1,0 +1,15 @@
+.article-image__container {
+  width: 100%;
+  padding-bottom: 56.25%;
+  background-repeat: no-repeat;
+}
+
+.article-image .article-image__container {
+  background-position: center;
+  background-size: cover;
+}
+
+.article-illustration .article-image__container {
+  background-position: bottom;
+  background-size: auto 95%;
+}

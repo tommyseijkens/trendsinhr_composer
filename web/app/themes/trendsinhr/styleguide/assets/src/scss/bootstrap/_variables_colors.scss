@@ -1,0 +1,172 @@
+// Basic colors
+$white: #ffffff;
+$black: #000000;
+$color-facebook: #3b5998;
+$color-twitter: #43bfe1;
+
+// Custom variables, prefixed by drigro, are used to override bootstrap functions
+
+// Shade colours by percentage (lighten, darken)
+$drigro-color-shades: 10%;
+
+$unused-color: #d1d1d1;
+
+$themeColor-main: #F5AFA4; // roze
+$themeColor-main-dark: darken($themeColor-main, $drigro-color-shades);
+
+$themeColor-01: #FFBF38; // geel
+$themeColor-02: #9BBC97; // groen
+$themeColor-03: #E05453; // rood
+$themeColor-04: #AF8AB3; // paars
+$themeColor-05: #95b2ca; // blauw
+
+// Sitecolors
+$color-01: #1d1d1d;
+$color-02: #ffffff;
+$color-03: $themeColor-main; // base themecolor (:root --themecolor)
+$color-04: #e4e4e4;
+$color-05: $unused-color;
+$color-06: $unused-color;
+$color-07: $unused-color;
+$color-08: $unused-color;
+$color-09: $unused-color;
+$color-10: $unused-color;
+$color-11: $unused-color;
+$color-12: $unused-color;
+
+// Calculated themecolor variants
+$color-01-dark: #000000;
+//$color-01-dark:   darken($color-01, $drigro-color-shades);
+$color-01-light: lighten($color-01, $drigro-color-shades);
+$color-02-dark: darken($color-02, $drigro-color-shades);
+$color-02-light: lighten($color-02, $drigro-color-shades);
+$color-03-dark: darken($color-03, $drigro-color-shades);
+$color-03-light: lighten($color-03, $drigro-color-shades);
+$color-04-dark: #d1d1d1;
+//$color-04-dark:   darken($color-04, $drigro-color-shades);
+$color-04-light: lighten($color-04, $drigro-color-shades);
+$color-05-dark: darken($color-05, $drigro-color-shades);
+$color-05-light: lighten($color-05, $drigro-color-shades);
+$color-06-dark: darken($color-06, $drigro-color-shades);
+$color-06-light: lighten($color-06, $drigro-color-shades);
+$color-07-dark: darken($color-07, $drigro-color-shades);
+$color-07-light: lighten($color-07, $drigro-color-shades);
+$color-08-dark: darken($color-08, $drigro-color-shades);
+$color-08-light: lighten($color-08, $drigro-color-shades);
+$color-09-dark: darken($color-09, $drigro-color-shades);
+$color-09-light: lighten($color-09, $drigro-color-shades);
+$color-10-dark: darken($color-10, $drigro-color-shades);
+$color-10-light: lighten($color-10, $drigro-color-shades);
+$color-11-dark: darken($color-11, $drigro-color-shades);
+$color-11-light: lighten($color-11, $drigro-color-shades);
+$color-12-dark: darken($color-12, $drigro-color-shades);
+$color-12-light: lighten($color-12, $drigro-color-shades);
+
+// UX Interface colors
+$color-accept: $color-01;
+$color-deny: $color-04;
+
+// Attribute colors
+$color-borders: $color-04-dark;
+$color-bg: $color-04;
+$color-bg-light: rgba($color-bg, .2);
+
+// Text colors
+$color-text: $color-01;
+$color-text-light: lighten($color-text, 40%);
+$color-text-dark: $color-text;
+$color-text-body: $color-text;
+$color-text-header: $color-text;
+$color-text-link: $color-text;
+$text-color: $color-text;
+
+$theme-colors: (
+        "color-01": $color-01,
+        "color-02": $color-02,
+        "color-03": $color-03,
+        "color-04": $color-04,
+        "color-05": $color-05,
+        "color-06": $color-06,
+        "color-07": $color-07,
+        "color-08": $color-08,
+        "color-09": $color-09,
+        "color-10": $color-10,
+        "color-11": $color-11,
+        "color-12": $color-12,
+        "color-01-dark": $color-01-dark,
+        "color-02-dark": $color-02-dark,
+        "color-03-dark": $color-03-dark,
+        "color-04-dark": $color-04-dark,
+        "color-05-dark": $color-05-dark,
+        "color-06-dark": $color-06-dark,
+        "color-07-dark": $color-07-dark,
+        "color-08-dark": $color-08-dark,
+        "color-09-dark": $color-09-dark,
+        "color-10-dark": $color-10-dark,
+        "color-11-dark": $color-11-dark,
+        "color-12-dark": $color-12-dark,
+        "color-01-light": $color-01-light,
+        "color-02-light": $color-02-light,
+        "color-03-light": $color-03-light,
+        "color-04-light": $color-04-light,
+        "color-05-light": $color-05-light,
+        "color-06-light": $color-06-light,
+        "color-07-light": $color-07-light,
+        "color-08-light": $color-08-light,
+        "color-09-light": $color-09-light,
+        "color-10-light": $color-10-light,
+        "color-11-light": $color-11-light,
+        "color-12-light": $color-12-light,
+        "color-accept": $color-accept,
+        "color-deny": $color-deny,
+        "color-borders": $color-borders,
+        "color-text": $color-text,
+        "color-text-light": $color-text-light,
+        "color-text-dark": $color-text-dark,
+        "color-text-body": $color-text-body,
+        "color-text-header": $color-text-header,
+        "color-text-link": $color-text-link,
+        "color-bg": $color-bg,
+        "color-bg-light": $color-bg-light,
+        "themecolor-01": $themeColor-01,
+        "themecolor-02": $themeColor-02,
+        "themecolor-03": $themeColor-03,
+        "themecolor-04": $themeColor-04,
+        "themecolor-05": $themeColor-05,
+        "themecolor": $themeColor-main,
+);
+
+// Assign Standard bootstrap color-variables to own color-variables
+$primary: $color-01;
+$secondary: $color-01-dark;
+$light: $color-01-light;
+$dark: $color-01-dark;
+$success: $color-accept;
+$info: $color-01-light;
+$warning: $color-deny;
+$danger: $color-deny;
+
+// Link colors
+$link-color: $color-text-link;
+$link-hover-color: darken($link-color, 2 * $drigro-color-shades);
+$link-hover-decoration: underline;
+
+$body-color: $color-text;
+$headings-color: $text-color;
+$border-color: $color-04;
+
+// Tables
+$table-bg: transparent;
+$table-accent-bg: $color-bg-light;
+$table-hover-bg: $color-bg-light;
+$table-active-bg: $color-bg-light;
+$table-border-color: $color-borders;
+$tabs-divider-color: $color-borders;
+
+
+// Headings
+$headings-color: $text-color;
+
+// Body
+$body-color: $color-text;
+

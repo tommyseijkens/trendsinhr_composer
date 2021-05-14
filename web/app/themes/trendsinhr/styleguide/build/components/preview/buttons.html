@@ -1,0 +1,138 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <style>
+        :root {
+            --themecolor: #9bbca0;
+            --themecolor-rgb: 155,188,160;
+            --themecolor-dark: #7c9680;
+            --themecolor-dark-rgb: 124,150,128;
+
+            /* oker */
+            --themecolor-01: #ffbf38;
+            --themecolor-01-rgb:  255,191,56;
+            /* olive */
+            --themecolor-02: #9bbca0;
+            --themecolor-02-rgb: 155,188,160;
+            /* aquamarine */
+            --themecolor-03: #a489b0;
+            --themecolor-03-rgb: 164, 137,176;
+            /* orange */
+            --themecolor-04: #ffa500;
+            --themecolor-04-rgb: 255,165,0;
+        }
+    </style>
+
+    <link rel="stylesheet" href="../../dist/css/style.min.css">
+    <link rel="stylesheet" href="../../fractal/fractal_preview.css">
+    <title>Preview</title>
+
+</head>
+<body>
+
+<div class="fractal-preview">
+<h1 class="overview">Buttons</h1>
+
+<h2 class="overview">Standard Bootstrap buttons</h2>
+<button class="btn btn-primary ">Primary</button>
+<button class="btn btn-secondary ">Secondary</button>
+<button class="btn btn-success ">Success</button>
+<button class="btn btn-danger ">Danger</button>
+<button class="btn btn-warning ">Warning</button>
+<button class="btn btn-info ">Info</button>
+<button class="btn btn-light ">Light</button>
+<button class="btn btn-dark ">Dark</button>
+<button class="btn btn-link ">Link</button>
+
+<h2 class="overview">Outlined</h2>
+<button class="btn btn-outline-primary ">Primary</button>
+<button class="btn btn-outline-secondary ">Secondary</button>
+<button class="btn btn-outline-success ">Success</button>
+<button class="btn btn-outline-danger ">Danger</button>
+<button class="btn btn-outline-warning ">Warning</button>
+<button class="btn btn-outline-info ">Info</button>
+<button class="btn btn-outline-light ">Light</button>
+<button class="btn btn-outline-dark ">Dark</button>
+
+<h2 class="overview">Large size</h2>
+<button class="btn btn-primary btn-lg ">Primary large</button>
+<button class="btn btn-secondary btn-lg ">Secondary large</button>
+
+
+<h2 class="overview">Small size</h2>
+<button class="btn btn-primary btn-sm ">Primary small</button>
+<button class="btn btn-secondary btn-sm ">Secondary small</button>
+
+
+<h2 class="overview">Custom colors</h2>
+<button class="btn btn-color-01 ">color-01</button>
+<button class="btn btn-color-02 ">color-02</button>
+<button class="btn btn-color-03 ">color-03</button>
+<button class="btn btn-color-04 ">color-04</button>
+
+<button class="btn btn-outline-color-01 ">color-01</button>
+<button class="btn btn-outline-color-02 ">color-02</button>
+<button class="btn btn-outline-color-03 ">color-03</button>
+<button class="btn btn-outline-color-04 ">color-04</button>
+
+
+<h2 class="overview">Button tags (a, button, input)</h2>
+<a class="btn btn-primary" href="#" role="button">a:Link</a>
+<button class="btn btn-color-04" type="submit">button:Button</button>
+<input class="btn btn-color-03" type="button" value="input:Input">
+<input class="btn btn-color-02" type="submit" value="input:Submit">
+<input class="btn btn-color-01" type="reset" value="input:Reset">
+
+
+<h2 class="overview">Blocklevel buttons (add .btn-block)</h2>
+<div class="w-50">
+  <button class="btn btn-color-01 btn-block ">color-01 .btn-block</button>
+  <button class="btn btn-color-02 btn-block ">color-02 .btn-block</button>
+</div>
+
+<h2 class="overview">Disabled (add attribute disabled</h2>
+<button class="btn btn-color-01 disabled ">color-01 disabled</button>
+<button class="btn btn-color-02 disabled ">color-02 disabled</button>
+<button class="btn btn-color-03 disabled ">color-03 disabled</button>
+<button class="btn btn-color-04 disabled ">color-04 disabled</button>
+
+
+<h2 class="overview">Checkbox buttons</h2>
+<div class="btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-color-01">
+    <input type="checkbox" checked autocomplete="off"> Checked
+  </label>
+</div>
+
+<h2 class="overview">Group of buttons as radio</h2>
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+  </label>
+</div>
+
+
+
+</div>
+
+<script src="../../dist/js/vendors.min.js"></script>
+<script src="../../dist/js/scripts.min.js"></script>
+<script src="../../fractal/fractal_preview.js"></script>
+<!--<script src="../../dist/js/css-polyfills.min.js"></script>-->
+
+
+</body>
+</html>
+

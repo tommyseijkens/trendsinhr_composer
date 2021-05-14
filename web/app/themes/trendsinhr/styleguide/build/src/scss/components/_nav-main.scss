@@ -1,0 +1,319 @@
+.nav-main {
+
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 100;
+
+  .nav-main__border {
+    border-top: 1px solid $color-bg;
+    border-bottom: 1px solid $color-bg;
+  }
+
+  .nav-main__wrapper {
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+
+    li {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      position: relative;
+
+      a {
+        text-transform: uppercase;
+        font-family: $font-text;
+        font-size: 1rem;
+        text-align: center;
+        color: $color-text;
+        font-weight: 400;
+        text-decoration: none;
+        padding: 22px 20px;
+        display: inline-block;
+        position: relative;
+
+        &:hover {
+          font-weight: 500;
+        }
+
+        &::after {
+            content: '';
+            height: 80px;
+            width: 1px;
+            background: $color-bg;
+            transform: rotate(11deg);
+            position: absolute;
+            top: -5px;
+            left: 0;
+        }
+
+        &::before {
+          display: block;
+          content: attr(title);
+          font-weight: 500;
+          height: 0;
+          overflow: hidden;
+          visibility: hidden;
+          text-transform: uppercase;
+        }
+      }
+
+    }
+  }
+
+  ul:first-of-type li:first-child a {
+    padding: 22px 20px 22px 0;
+    &::after {
+      content: '';
+      height: 80px;
+      width: 0;
+      background: $color-bg;
+      transform: rotate(0deg);
+      position: absolute;
+      top: -5px;
+      left: 0;
+    }
+  }
+
+  a.nav-pubs-trigger {
+    padding: 22px 0 22px 20px;
+  }
+
+}
+
+.nav-main__wrapper {
+  #menu-items li:last-child a {
+    padding-right: 0;
+  }
+}
+
+.nav-pubs {
+  position: absolute;
+  width: 100%;
+  display: none;
+  justify-content: space-between;
+  background: white;
+  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.28);
+  z-index: 100;
+
+  .nav-pubs__item {
+    width: calc(100% / 3);
+    margin: 0 .5rem;
+    &:last-of-type {
+      margin-right: 0;
+    }
+    &:first-of-type {
+      margin-left: 0;
+    }
+    height: 250px;
+    background: $color-bg;
+
+    &:hover {
+      @extend .theme-bg;
+    }
+
+  }
+
+  @include media-breakpoint-up(md) {
+    &.active {
+      display: flex;
+        //animation-name: come-up;
+        //animation-duration: 0.2s;
+
+      @keyframes come-up {
+        from {
+          transform: translateY(20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .nav-pubs__item {
+
+    position: relative;
+
+    background-size: auto 500px;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    &:hover {
+      cursor: pointer;
+      background-size: auto 500px;
+      background-position: center -250px;
+      background-repeat: no-repeat;
+    }
+
+    &.nav-pubs__item--publications {
+      background-image: $pubs-publications;
+    }
+    &.nav-pubs__item--whitepapers {
+      background-image: $pubs-whitepapers;
+    }
+    &.nav-pubs__item--magazines {
+      background-image: $pubs-magazines;
+    }
+    &.nav-pubs__item--news {
+      background-image: $pubs-news;
+    }
+
+  }
+}
+
+.nav-pubs__item--span {
+  display: block;
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
+  @extend .text-heading;
+}
+
+
+@include media-breakpoint-down(md) {
+
+  .nav-main__scroller-left {
+    pointer-events: none;
+    display: none;
+
+    &.active {
+      display: flex;
+    }
+
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 15px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0) 100%);
+    width: 60px;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+
+    &::before {
+      pointer-events: all;
+      z-index: 2;
+      position: absolute;
+      top: 20px;
+      left: -4px;
+      font-family: $font-icon;
+      font-size: 1rem;
+      text-align: center;
+      transform: rotate(-90deg);
+      content: 'b';
+    }
+
+    &:hover {
+      &::before {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .nav-main__scroller-right {
+    pointer-events: none;
+    display: none;
+
+    &.active {
+      display: flex;
+    }
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 15px;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0) 100%);
+    width: 60px;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+
+    &::before {
+      pointer-events: all;
+      z-index: 2;
+      position: absolute;
+      top: 20px;
+      right: -4px;
+      font-family: $font-icon;
+      font-size: 1rem;
+      text-align: center;
+      transform: rotate(90deg);
+      content: 'b';
+    }
+
+    &:hover {
+      &::before {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .page--topics {
+    .nav-main {
+      background: $color-bg;
+
+      ul li a:after {
+        background: white;
+      }
+
+      .nav-main__border {
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+      }
+
+      .nav-main__scroller-left {
+        background-image: linear-gradient(to right, rgba($color-bg, 1) 30%, rgba($color-bg, 0) 100%);
+      }
+
+      .nav-main__scroller-right {
+        background-image: linear-gradient(to left, rgba($color-bg, 1) 30%, rgba($color-bg, 0) 100%);
+      }
+    }
+  }
+}
+
+.page--archives {
+  .nav-main {
+    background: $color-bg;
+
+    ul li a:after {
+      background: white;
+    }
+
+    .nav-main__border {
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+    }
+
+    .nav-main__scroller-left {
+      background-image: linear-gradient(to right, rgba($color-bg, 1) 30%, rgba($color-bg, 0) 100%);
+    }
+
+    .nav-main__scroller-right {
+      background-image: linear-gradient(to left, rgba($color-bg, 1) 30%, rgba($color-bg, 0) 100%);
+    }
+  }
+}
+
+#menu-publications {
+  display: block;
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+}

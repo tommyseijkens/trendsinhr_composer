@@ -1,0 +1,12 @@
+{
+    "name": "tommyseijkens/trendsinhr",
+    "authors": [
+        {
+            "name": "Tommy Seijkens",
+            "email": "seijkens@gmail.com"
+        }
+    ],
+    "require": {
+        "mundschenk-at/php-typography": "^6.6"
+    }
+}

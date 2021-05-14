@@ -1,0 +1,20 @@
+<div class="page page--topic">
+    {{> @header-top }}
+    {{> @nav-main }}
+
+    <div class="container mt-7 mt-lg-12">
+        {{> @description type="Thema" }}
+    </div>
+
+    {{> @content-page-text title="Persoonlijke ontwikkeling" lead=true titles=false }}
+
+    <div>
+        <div class="container grid-section-label d-none d-md-block">Artikelen</div>
+        <div class="container">
+            {{> @template-items-list moretext="Laad meer artikelen" }}
+        </div>
+    </div>
+
+    {{> @template-topics-cards }}
+    {{> @footer-total }}
+</div>

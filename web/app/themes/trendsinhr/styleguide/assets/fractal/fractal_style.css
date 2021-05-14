@@ -1,0 +1,28 @@
+.Header {
+  /* background: #d39f5b; */
+  /* box-shadow: 0 5px 5px rgba(0,0,0,.2); */
+  height: 60px;
+}
+
+.Preview,
+.Preview-handle {
+  border: 0!important;
+}
+
+a {
+  color: #67937f;
+}
+
+a:hover {
+  color: #8f253f;
+}
+
+.Pen-info {
+  padding: 0;
+  margin: 0;
+  border:0;
+  border-top: 1px solid rgba(83, 83, 99, 0.25)!important;
+}
+
+
+

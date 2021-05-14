@@ -1,0 +1,143 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <style>
+        :root {
+            --themecolor: #9bbca0;
+            --themecolor-rgb: 155,188,160;
+            --themecolor-dark: #7c9680;
+            --themecolor-dark-rgb: 124,150,128;
+
+            /* oker */
+            --themecolor-01: #ffbf38;
+            --themecolor-01-rgb:  255,191,56;
+            /* olive */
+            --themecolor-02: #9bbca0;
+            --themecolor-02-rgb: 155,188,160;
+            /* aquamarine */
+            --themecolor-03: #a489b0;
+            --themecolor-03-rgb: 164, 137,176;
+            /* orange */
+            --themecolor-04: #ffa500;
+            --themecolor-04-rgb: 255,165,0;
+        }
+    </style>
+
+    <link rel="stylesheet" href="../../dist/css/style.min.css">
+    <link rel="stylesheet" href="../../fractal/fractal_preview.css">
+    <title>Preview</title>
+
+</head>
+<body>
+
+<div class="fractal-preview">
+<div class="row">
+    <div class="container-content">
+        <form class="form">
+
+
+            <input type="text" class="form-control" name="example-1" id="example-1" placeholder="Some text input...">
+            <label>Label</label>
+            <input type="text" class="form-control" name="example-2" id="example-2"
+                   placeholder="Placeholder text...">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <input type="text" name="example-3" class="form-control" id="example-3" placeholder="Column 1..." required>
+                </div>
+                <div class="col-lg-6">
+                    <input type="text" name="example-4" class="form-control" id="example-4" placeholder="Column 2...">
+                </div>
+            </div>
+
+            <input type="text" class="form-control" name="example-5" id="example-5"
+                   placeholder="Placeholder text..." required>
+            <input type="text" class="form-control" name="example-6" id="example-6"
+                   placeholder="Verplicht" required>
+
+            <select class="custom-select" name="location" id="location" required>
+                <option selected>Select location...</option>
+                <option value="Location inside">Location inside</option>
+                <option value="Outside location">Outside location</option>
+            </select>
+
+            <textarea class="form-control" id="message" name="message" rows="8"
+                      placeholder="Textarea..."></textarea>
+
+            <div class="my-5">
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="radio1" name="preferred" value="radio1" class="custom-control-input">
+                    <label class="custom-control-label label-big__label" for="radio1">
+                        Radio selector 1
+                    </label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="radio2" name="preferred" value="radio2" class="custom-control-input">
+                    <label class="custom-control-label label-big__label" for="radio2">
+                        Radio selector 2
+                    </label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="radio3" name="preferred" value="radio3" class="custom-control-input">
+                    <label class="custom-control-label label-big__label" for="radio3">
+                        Radio selector 3
+                    </label>
+                </div>
+            </div>
+
+            <div class="my-5">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" id="check1" name="check1" value="check1"
+                           class="custom-control-input">
+                    <label class="custom-control-label label-big__label" for="check1">
+                        Checkbox selector 1
+                    </label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" id="check2" name="check1" value="check2"
+                           class="custom-control-input">
+                    <label class="custom-control-label label-big__label" for="check2">
+                        Checkbox selector 1
+                    </label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" id="check3" name="check1" value="check3"
+                           class="custom-control-input">
+                    <label class="custom-control-label label-big__label" for="check3">
+                        Checkbox selector 1
+                    </label>
+                </div>
+            </div>
+
+
+            <input type="text" value="" name="last_name" class="d-none">
+            <button type="submit" class="btn btn-color-03">Verzend</button>
+        </form>
+
+        <div class="form-messages">
+            <div class="alert alert-color-accept form-success">
+                The form has been sent succesfully.
+            </div>
+            <div class="alert alert-color-deny form-error">
+                Something went wrong, please try again.
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="../../dist/js/vendors.min.js"></script>
+<script src="../../dist/js/scripts.min.js"></script>
+<script src="../../fractal/fractal_preview.js"></script>
+<!--<script src="../../dist/js/css-polyfills.min.js"></script>-->
+
+
+</body>
+</html>
+

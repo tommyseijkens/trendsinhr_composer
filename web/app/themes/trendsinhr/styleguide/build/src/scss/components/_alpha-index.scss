@@ -1,0 +1,55 @@
+#alpha-index {
+  background: white;
+}
+
+.alpha-index {
+
+  margin-top: 60px;
+
+  > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid $color-borders;
+    display: flex;
+
+    /* alpha */
+    > li:nth-child(1) {
+      margin: 0;
+      padding: 1.3125rem 0;
+      display: inline-block;
+      width: 80px;
+      @extend h3;
+    }
+
+    /* index */
+    > li:nth-child(2) {
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      width: 100%;
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+          display: block;
+          padding: 1rem 0;
+          a {
+            cursor: pointer;
+            &:hover {
+              border-bottom: 1px solid $color-text;
+            }
+          }
+        }
+
+        li:not(:last-child) {
+          border-bottom: 1px solid $color-borders;
+        }
+      }
+    }
+  }
+
+}

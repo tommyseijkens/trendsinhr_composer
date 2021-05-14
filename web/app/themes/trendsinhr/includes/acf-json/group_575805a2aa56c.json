@@ -1,0 +1,392 @@
+{
+    "key": "group_575805a2aa56c",
+    "title": "Opties: Site instellingen",
+    "fields": [
+        {
+            "key": "field_5f74537c2ac66",
+            "label": "Spotlight artikel",
+            "name": "highlightedpost",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "post"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_5f771e616ee59",
+            "label": "Uitgelichte artikelen",
+            "name": "featured_posts",
+            "type": "relationship",
+            "instructions": "Selecteer drie items.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "post"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "post_type",
+                "taxonomy"
+            ],
+            "elements": "",
+            "min": 3,
+            "max": 3,
+            "return_format": "id"
+        },
+        {
+            "key": "field_5f6b0a0053bc8",
+            "label": "Banner HTML 1",
+            "name": "bannerhtml_1",
+            "type": "textarea",
+            "instructions": "HTML & eventueel Javascript tbv banner",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 12,
+            "new_lines": ""
+        },
+        {
+            "key": "field_5f8941be624ef",
+            "label": "Banner HTML 2",
+            "name": "bannerhtml_2",
+            "type": "textarea",
+            "instructions": "HTML & eventueel Javascript tbv banner",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 12,
+            "new_lines": ""
+        },
+        {
+            "key": "field_5f8941c7acc23",
+            "label": "Banner HTML 3",
+            "name": "bannerhtml_3",
+            "type": "textarea",
+            "instructions": "HTML & eventueel Javascript tbv banner",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 12,
+            "new_lines": ""
+        },
+        {
+            "key": "field_5e78d4d30b98f",
+            "label": "Banner header link",
+            "name": "banner_header_link",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e78d4c90b98e",
+            "label": "Banner header afbeelding",
+            "name": "banner_header_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5925530705511",
+            "label": "Profiel knop label",
+            "name": "profiel_knop_label",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59acfdc1e73ec",
+            "label": "Event header titel",
+            "name": "event_header_titel",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59acfdd0e73ed",
+            "label": "Event header subtitel",
+            "name": "event_header_subtitel",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59acfdd7e73ee",
+            "label": "Event header link",
+            "name": "event_header_link",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59acfde2e73ef",
+            "label": "Event header video mp4",
+            "name": "event_header_video_mp4",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59acfdece73f0",
+            "label": "Event header video webm",
+            "name": "event_header_video_webm",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_57580639e229d",
+            "label": "Copyrightlink",
+            "name": "acf_copyrightlink",
+            "type": "url",
+            "instructions": "De URL waarnaar alle copyright links op deze site heen linken.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5f8e8319e65c2",
+            "label": "Over Trends in HR",
+            "name": "about_text",
+            "type": "text",
+            "instructions": "Footertekst voor Trends in HR",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "In de overheid, het onderwijs, zorg & welzijn en cultuur volgen de ontwikkelingen elkaar snel op. Alles bijhouden is praktisch onmogelijk. Publiek Perspectief houdt u op de hoogte van de laatste ontwikkelingen op het gebied van HRM, management en salarisadministratie in de publieke sector.",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f8e8476696f4",
+            "label": "Nieuwsbrief titel",
+            "name": "subscribe_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Schrijf je in voor de nieuwsbrief",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f8e8454696f3",
+            "label": "Nieuwsbrief tekst",
+            "name": "subscribe_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<p class=\"my-7\">Wij verzamelen de HR trends en ontwikkelingen voor jou, zodat je automatisch op de hoogte blijft.<\/p>",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_607986772c346",
+            "label": "Titel geen zoekresultaten",
+            "name": "search_noresults_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Geen resultaten",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60798881159b8",
+            "label": "Tekst geen zoekresultaten",
+            "name": "search_noresults_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "De ingegeven zoekopracht geeft helaas geen resultaten. Probeer een andere zoekopdracht.",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1618577598
+}
